@@ -31,11 +31,25 @@ $("#coinflip").click(function(){
                 if(Math.random() >= .5){
                     console.log("heads");
                     flip.pause() 
-                    $(".coin").animate({rotateX: 0});
+                    anime({
+                        targets: '.coin',
+                        rotateX: 0,
+                        easing: 'easeInOutSine',
+                        loop: false,
+                        duration: 300,
+                        autoplay: true,
+                    });
                 } else{
                     console.log("tails");
                     flip.pause()
-                    $(".coin").animate({rotateX: 180});
+                    anime({
+                        targets: '.coin',
+                        rotateX: 180,
+                        easing: 'easeInOutSine',
+                        loop: false,
+                        duration: 300,
+                        autoplay: true,
+                    });
                 }
                 isCoinPlaying = false
             },2100);
