@@ -377,6 +377,9 @@ input[type="text"]{
         text-align: center;
         padding: 0 1rem;
     }
+    .prediction > h1{
+        font-size: 3.75vh;
+    }
 
     .dice-roll{
         margin-top: 15vh;
